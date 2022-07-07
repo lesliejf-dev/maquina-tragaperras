@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tragaperras</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div id="cajaMonedero">
+        <header>  
+            <div class="monedero">
+                <h1>Introduce monedas</h1>
+                <input type="number" min="1" max="30" value="0" class="inputNumber" id="monedas" />
+                <input type="button" class="btn" id="introduceMonedas" value="Introducir" />
+                
+                <h4>El numero de monedas actual es de:</h4>
+                <input type="number" min="1" max="30" value="0" class="inputSaldo" id="saldo" readonly />     
+                
+                <div class="sald"> 
+                    <input type="button" class="btn" id="salir" value="SALIR" />
+
+                </div>
+                
+            </div>       
+        </header>
+
+        <div id="tirada">
+            <div class="pantalla" id="imagen1">
+                <img id="img1" src="img/pingu.png" />
+            </div>
+
+            <div class="pantalla" id="imagen2">
+                <img id="img2" src="img/pingu.png" />
+            </div>
+
+            <div class="pantalla" id="imagen3">
+                <img id="img3" src="img/pingu.png" />
+            </div>
+
+            <div class="">
+                <button name="button" class="pantalla" onMouseDown="mostrarEvento(1);" onMouseUp="mostrarEvento(2);">			
+                    <img id="tirar"  class="palancaUp" src="img/palancaUP.png">
+            </button>  
+
+            </div>
+
+        </div>
+
+        <div class="historial"> 
+                
+            <div id="history">
+                <h2> Historial de tiradas</h2>
+                <ul class="list" id="historialTiradas"></ul>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
